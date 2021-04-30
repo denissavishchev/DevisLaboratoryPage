@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Devis Laboratory
+{% endblock %}
+
+{% block body %}
+   <div class="or">
+        <div class="completeOrder-container">
+            <h1 class="completedOrder">Completed Orders</h1>
+
+          {% for el in completeOrder %}
+          <div class="completeOrder">
+            <h2>{{ el.effect }}</h2>
+            <p>{{ el.email }}</p>
+            <p>{{ el.name }}</p>
+            <p>{{ el.surname }}</p>
+            <p>{{ el.state }}</p>
+            <p>{{ el.city }}</p>
+            <p>{{ el.adress }}</p>
+            <p>{{ el.postcode }}</p>
+            <p>{{ el.tshirt }}</p>
+            <p>{{ el.price }}</p>
+            <p><b>Date:{{ el.date.date() }}</b></p>
+            <a href="/completeOrder/{{ el.id }}/del" class="btn btn-danger">Delete</a>
+          </div>
+          {% endfor %}
+
+
+
+    </div>
+
+
+{% endblock %}

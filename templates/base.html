@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link class="icon" rel="shortcut icon" href="../static/img/devis_icon.ico" type="../static/img/devis_icon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="header_logo"><a href="/"><img class="devis" src="../static/img/devislogo.jpg"></a> </div>
+
+            <nav class="nav">
+                <a class="nav_link" href="/order"> &nbsp;Order&nbsp; </a>
+                <a class="nav_link" href="/effects"> &nbsp;Effects&nbsp; </a>
+                <a class="nav_link" href="/video"> &nbsp;Videos&nbsp; </a>
+                <a class="nav_link" href="/about"> &nbsp;About&nbsp; </a>
+
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+
+{% block body %}
+
+{% endblock %}
+</body>
+
+</html>

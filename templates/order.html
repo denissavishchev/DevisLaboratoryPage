@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Devis Laboratory
+{% endblock %}
+
+{% block body %}
+   <div class="order-intro">
+        <div class="video-container">
+            <h1 class="order">Order</h1>
+            <form method="post">
+                <text class="ordertext">Effect</text> <select name="Effect" id="Effect" class="form-control1">
+                <option value="What Effect" selected>Choose Effect</option>
+                <option value="Blood Delay">Blood Delay -- 300$</option>
+                <option value="Elemental OD">Elemental OD -- 200$</option>
+                <option value="Endless Reverb">Endless Reverb -- 250$</option>
+                </select><br>
+                <text class="ordertext">Email</text> <input type="text" name="Email" id="Email" class="form-control" placeholder="Email"><br>
+                <text class="ordertext">Name</text> <input type="text" name="Name" id="Name" class="form-control" placeholder="Name"><br>
+                <text class="ordertext">Surname</text> <input type="text" name="Surname" id="Surname" class="form-control" placeholder="Surname"><br>
+                <text class="ordertext">Adress</text> <input type="text" name="Adress" id="Adress" class="form-control" placeholder="Adress"><br>
+                <text class="ordertext">State</text> <input type="text" name="State" id="State" class="form-control" placeholder="State"><br>
+                <text class="ordertext">City</text> <input type="text" name="City" id="City" class="form-control" placeholder="City"><br>
+                <text class="ordertext">PostCode</text><input type="text" name="Postcode" id="Postcode" class="form-control" placeholder="Post Code"><br>
+                <text class="ordertext">T-Shirt</text> <select name="TShirt" id="TShirt" class="form-control1">
+                <option value="None" selected>None</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                </select><br>
+                <text class="ordertext">Price</text> <input type="text" name="Price" id="Price" class="form-control" placeholder="Price" ><br>
+                <input type="submit" class="button" value="Experiment the Sound">
+            </form>
+
+    </div>
+
+
+{% endblock %}
